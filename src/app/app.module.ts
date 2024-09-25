@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UploadEncryptComponent } from './upload-encrypt/upload-encrypt.component';
+import { UploadDecryptComponent } from './upload-decrypt/upload-decrypt.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UploadEncryptComponent,
+    UploadDecryptComponent
   ],
   imports: [
     BrowserModule,

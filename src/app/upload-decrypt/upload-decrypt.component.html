@@ -1,0 +1,14 @@
+<div class="container mx-auto p-2">
+  <div class="flex justify-center items-center pt-2">
+    <img src="../../assets/img/encrypt.png" width="25%">
+  </div>
+  <h1 class="text-xl font-bold text-center">Decriptar Arquivo</h1>
+
+  <!-- Área de Upload -->
+  <label class="block mt-4 cursor-pointer bg-gray-200 text-gray-800 text-white text-center rounded-lg py-3 hover:bg-gray-300 text-white transition duration-200">
+    Selecione um arquivo para encriptar
+    <input type="file" (change)="handleFileInput($event)" class="hidden" />
+  </label>
+
+  <p *ngIf="downloadMessage" class="mt-2 text-green-500">{{ downloadMessage }}</p>
+</div>
