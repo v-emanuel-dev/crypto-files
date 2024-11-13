@@ -1,14 +1,18 @@
 <div class="container mx-auto p-2">
   <div class="flex justify-center items-center pt-2">
-    <img src="../../assets/img/encrypt.png" width="25%">
+    <img src="../../assets/img/encrypt.png" width="15%" />
   </div>
-  <h1 class="text-xl font-bold text-center">Encriptar Arquivo</h1>
+  <h1 class="text-xl font-bold text-center">Encrypt File</h1>
 
   <!-- Área de Upload -->
-  <label class="block mt-4 cursor-pointer bg-teal-700 text-gray-800 text-white text-center rounded-lg py-3 hover:bg-teal-800 text-white transition duration-200">
-    Selecione um arquivo para encriptar
+  <label
+    class="block mt-4 cursor-pointer bg-teal-700 text-gray-800 text-white text-center rounded-lg py-3 hover:bg-teal-800 text-white transition duration-200"
+  >
+    Select a file to encrypt
     <input type="file" (change)="handleFileInput($event)" class="hidden" />
   </label>
 
-  <p *ngIf="downloadMessage" class="mt-2 text-green-500">{{ downloadMessage }}</p>
+  <p *ngIf="downloadMessage" class="mt-2 text-green-500">
+    {{ downloadMessage }}
+  </p>
 </div>
